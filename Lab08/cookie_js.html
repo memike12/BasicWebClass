@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+	  <meta charset = "utf-8" />
+      <title>Using Cookies in Java Script</title>
+
+      <script type = "text/javascript">
+         <!--
+         // Return the 'value' of the cookie variable with name 'desiredName'
+         // returns null if no match found.
+         function readCookie(desiredName) {
+             var cookie = document.cookie;
+
+             // First split the pairs apart on '; '
+             var pairs  = cookie.split("; ");
+
+             // Now split each pair on '='.  Check if have a match
+             for (var i=0; i < pairs.length; i++) {
+                var aPair = pairs[i];
+                var cookieTokens = aPair.split("=");
+                var name  = cookieTokens[0]; 
+                var value = cookieTokens[1];
+                if (name == desiredName) {
+                    // found desired variable -- return value
+                    return unescape(value);
+                }
+             }
+
+             return null;   // no match;
+         }
+
+        // Create cookie for variable 'name' with value 'value'
+        // If 'days' is set, sets to expire 'days' days from now.
+        function createCookie(name,value,days) { 
+          if (days) { 
+            var date = new Date();
+            date.setTime(date.getTime()+(days*24*60*60*1000));
+            var expires = "; expires="+date.toGMTString(); 
+          } 
+          else 
+             var expires = ""; 
+		
+		  document.cookie = name+"="+escape(value)+expires; 
+        } 
+
+        // Erase any cookie set for variable 'name'        
+        function eraseCookie(name) {
+        	createCookie(name,"",-1);
+        }
+
+         
+		//YOUR CODE HERE
+		function replaceShipCookie() {
+			var newCookie=window.prompt("Did you change your mind? Please enter your new ship preference.");
+			eraseCookie(ship)
+			createCookie("ship", newCookie, 1); 
+			location.reload();
+			}
+			
+		function replaceColorCookie() {
+			var newCookie=window.prompt("Did you change your mind? Please enter your new color preference.");
+			eraseCookie(color)
+			createCookie("color", newCookie, 1); 
+			location.reload();
+			}
+
+		var colorCookie = readCookie("color");
+		var shipCookie = readCookie("ship");
+		var favShip;
+		var color;
+		
+		
+		if(shipCookie == null)
+			{
+				favShip = window.prompt("What is your favorite ship in the US Navy?");
+				createCookie("ship",favShip,1);
+				shipCookie = readCookie("ship");
+			}
+		if(colorCookie == null)
+			{
+				favColor = window.prompt("Please enter the color that you love!");
+				createCookie("color",favColor,1);
+				colorCookie = readCookie("color");
+			}
+		document.writeln(" <p id = \"color\">Your chosen color is: " + colorCookie + "</p>");
+		document.writeln(" <p id = \"ship\"> Your favorite ship is: " + shipCookie + "</p>");
+		
+
+
+         // -->
+      </script>
+   </head>
+
+   <body>
+      <h1>Welcome to my page with cookies</h1>
+	    <button onclick="replaceShipCookie()">Change Ship</button>
+		<button onclick="replaceColorCookie()">Change Color</button>
+
+   </body>
+</html>

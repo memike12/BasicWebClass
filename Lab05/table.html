@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<head>
+  <meta charset = "utf-8" />
+  <title>Abe Lincoln Table Creator</title>
+
+  <script type="text/javascript" >
+     <!--
+  
+     // BELOW IS JAVASCRIPT YOU SHOULD PROBABLY LEAVE ALONE
+  
+	// Debug helper functions                                                                                                                               
+     // Use my_writeln() instead of document.writeln().                                                                                                      
+     // Then when script is finished, call my_finish() to output                                                                                             
+     // the contents of all my_writeln() calls to a visible text area box.                                                                                   
+     var _alldata = "";                                                                                                                                      
+                                           
+     // Call this function everytime instead of document.writeln()
+     // It will call document.writeln() for you, but also save contents for friendly output later.         
+     // It is helpful to add \n at the end of strings that logically form a line, to make the output easier to read later.                                                                                                         
+     function my_writeln(str) {                                                                                                                              
+         // Output to the document                                                                                                                           
+         document.writeln(str);                                                                                                                              
+
+         // Save for later                                                                                                                                                       
+		 str += "\n";    
+         _alldata += str;                                                                                                                                    
+     }                                                                                                                                                       
+
+     // Call this function everytime instead of document.write()
+     // It will call document.write() for you, but also save contents for friendly output later.         
+     function my_write(str) {                                                                                                                              
+         // Output to the document                                                                                                                           
+         document.write(str);                                                                                                                              
+
+         // Save for later                                                                                                                                                       
+		 
+         _alldata += str;                                                                                                                                    
+     }	 
+	 
+     // Call this function when finish using JavaScript to see all of the JS output.
+     // This only works if you have called my_writeln() everytime instead of document.writeln().                                                           
+     function my_finish() {                                                                                                                                  
+         document.writeln("<form><textarea cols=\"120\" rows=\"20\">"+_alldata+"</textarea></form>");                                                         
+     }                                     
+     
+     // ************************************************************
+     // START YOUR JAVASCRIPT HERE.  A SIMPLE EXAMPLE IS GIVEN BELOW
+     // ************************************************************
+     
+	 
+	 //Declariation of variables
+	 var borderChoice;
+	 var borderColor;
+	 var tableRows;
+
+     //First popup box to choose border thickness
+	 do{
+     borderChoice = window.prompt( "Select a border:\n" + "1. Thin\n" + "2. Medium\n" + "3. Thick\n");
+	 } while (borderChoice != 1 && borderChoice != 2 &&  borderChoice != 3 )
+	 
+	 do{
+	 borderColor = window.prompt( "What style should the border be?\n" + "1. dashed\n" + "2. groove\n" + "3. solid\n");
+	 } while (borderColor != 1 && borderColor != 2 &&  borderColor!= 3 )
+	 
+
+	 do{
+	 tableRows = window.prompt( "How many rows do you want in the table");
+	 } while (tableRows <= 0)
+		
+
+     // Finished with JavaScript.  Output the debug results.
+     my_finish();
+     
+     // -->
+   </script >
+     
+</head>
+
+<body>
+
+  <h1> The Abraham Lincoln Table Creator  </h1>
+
+  <script type="text/javascript">
+	var rowCount =1;
+	var colCount =1;
+	var data;
+	if (borderColor = "1")
+		borderColor = "dashed";
+	if (borderColor = "2")
+		borderColor = "groove";
+	if (borderColor = "3")
+		borderColor = "solid";
+	
+	my_writeln("<table border= borderChoice border-style = borderColor><thead></thead><tfoot></tfoot><tbody><tr><td>")
+	 do{
+		data = window.prompt( "What should be in row " + rowCount + " column " + colCount);
+		my_writeln( data + "</td><td>");
+		colCount++;
+	 } while (data != null)
+	 my_writeln( data + "</td></tr>");
+	 rowCount++;
+	 while (rowcount <= tableRows)
+	 {
+	 my_writeln("<tr><td>")
+	 do{
+		data = window.prompt( "What should be in row " + rowCount + " column " + colCount);
+		my_writeln( data + "</td><td>");
+		colCount++;
+	 } while (data != null)
+	 }
+
+	 
+	
+	</script>
+
+	<p> Thank you for using Abraham Lincoln's table generator </p>
+  <!-- ***************************************************************
+       Below this point is text you should include on every IT350 page
+       *************************************************************** -->
+
+  <!-- Below is a script to output the time at which this page was last modified.
+       Later in the course we will learn how this works.  -->
+  <!-- This makes a button you can click on to validate your page - also include this on every page -->
+  <p><br/><br/> </p>
+  <hr/>
+  <p>
+   	<script type = "text/javascript">
+	 document.write('<a href="http://zee.cs.usna.edu:8888/?doc='+document.location+'">' +
+        '<img src="http://www.w3.org/html/logo/img/mark-word-icon.png"'+
+		'alt="Valid HTML 5!" height="50" width="50" />'+
+      '</a>');
+	</script>  
+    This page last modified 
+    <script type="text/javascript">
+      document.write(document.lastModified);
+    </script>
+  </p>
+
+
+</body>
+
+</html>
+  

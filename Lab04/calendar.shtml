@@ -1,0 +1,316 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"><html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<LINK REL="STYLESHEET" HREF="calstyle.css">
+
+<title>IT350 - Fall 2013 - Calendar</title>
+
+</head>
+<body>
+<div class="container">
+	<!--#include file ="header.html" -->
+
+<div class="header">
+<h1>IT350 - Fall 2013 Calendar</h1>
+</div>
+
+<a id="August2013"></a><table class="caltable" cellpadding="0" cellspacing="0" border="2" width="95%">
+<tr align="center" valign="middle">
+<td colspan="7" align="center" valign="middle"><font size="+3">August 2013</font></td></tr>
+<tr align="center" valign="middle">
+	<td width="14%">Sunday</td>
+	<td width="14%">Monday</td>
+	<td width="14%">Tuesday</td>
+	<td width="14%">Wednesday</td>
+	<td width="14%">Thursday</td>
+	<td width="14%">Friday</td>
+	<td width="14%">Saturday</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86">&nbsp;</td>
+	<td width="14%" height="86">&nbsp;</td>
+	<td width="14%" height="86">&nbsp;</td>
+	<td width="14%" height="86">&nbsp;</td>
+	<td width="14%" height="86pt">1</td>
+	<td width="14%" height="86pt">2</td>
+	<td width="14%" height="86pt">3</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">4</td>
+	<td width="14%" height="86pt">5</td>
+	<td width="14%" height="86pt">6</td>
+	<td width="14%" height="86pt">7</td>
+	<td width="14%" height="86pt">8</td>
+	<td width="14%" height="86pt">9</td>
+	<td width="14%" height="86pt">10</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">11</td>
+	<td width="14%" height="86pt">12</td>
+	<td width="14%" height="86pt">13</td>
+	<td width="14%" height="86pt">14</td>
+	<td width="14%" height="86pt">15</td>
+	<td width="14%" height="86pt">16</td>
+	<td width="14%" height="86pt">17</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">18<center><br><font color='green'>Week 1</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">19</td>
+	<td width="14%" height="86pt">20<center><br>Class 1: <a href="slides/IT350_set1_Intro.pdf">Course intro</a> </center><center><br>Lab 1: <a href="labs/lab01/Lab01.htm">Intro to Web Site Construction Lab</a> <br/> <a href = "labs/it350_LabGuidance.html">Lab Guidance </a></center></td>
+	<td width="14%" height="86pt">21</td>
+	<td width="14%" height="86pt">22<center><br>Class 2: <a href="slides/IT350_set2_HistoryAndValidHTML5.pdf">WWW and HTML</a></center><center><br><font color="red"> <span style="color:red; font-weight:bold">4th edition: Ch. 4.1-4.9 <br/> Skim Ch. 1-2. <br />5th edition: Ch. 2.1-2.9 <br/>Skim Ch. 1</span></font></center><center><br><font color="red"> <span style="color:red; font-weight:bold"> <a href = "labs/it350_LabGuidance.html">Lab Topic Email Due 0800</a></span></font></center></td>
+	<td width="14%" height="86pt">23<center><br>lab work in MI392</center></td>
+	<td width="14%" height="86pt">24</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">25<center><br><font color='green'>Week 2</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">26<center><br><font color="red"> <span style="color:red; font-weight:bold">Lab 1 Due 2359</span></font></center></td>
+	<td width="14%" height="86pt">27<center><br>Class 3: <a href="slides/IT350_set3_TablesForms.pdf">HTML5 Tables/Forms</a> <br/> <a href = "slides/set3_form1.html">Simple form</a></center><center><br>Lab 2: <a href="labs/lab02/Lab02.htm">HTML5 Tables/Forms</a></center><center><br><font color="red"> <span style="color:red; font-weight:bold">4th edition: Ch. 4.10-4.15 <br/> 5th edition: Ch 2.10-2.13 </span></font></center><center><br><font color="red"> <span style="color:red; font-weight:bold">Blackboard 9.1 Online Quiz Due at 0900 (from today's reading - (4th edition Ch. 4.10-4.15 or 5th edition Ch. 2.10-2.13))</span></font></center></td>
+	<td width="14%" height="86pt">28</td>
+	<td width="14%" height="86pt">29<center><br>lab work in MI392</center></td>
+	<td width="14%" height="86pt">30<center><br>lab work in MI392</center></td>
+	<td width="14%" height="86pt">31</td>
+</tr>
+</table>
+<p></p>
+<a id="September2013"></a><table class="caltable" cellpadding="0" cellspacing="0" border="2" width="95%">
+<tr align="center" valign="middle">
+<td colspan="7" align="center" valign="middle"><font size="+3">September 2013</font></td></tr>
+<tr align="center" valign="middle">
+	<td width="14%">Sunday</td>
+	<td width="14%">Monday</td>
+	<td width="14%">Tuesday</td>
+	<td width="14%">Wednesday</td>
+	<td width="14%">Thursday</td>
+	<td width="14%">Friday</td>
+	<td width="14%">Saturday</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">1<center><br><font color='green'>Week 3</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">2<center><br><font color="red"> Labor Day</font></center></td>
+	<td width="14%" height="86pt">3<center><br><font color="red">Monday Schedule</font></center></td>
+	<td width="14%" height="86pt">4</td>
+	<td width="14%" height="86pt">5<center><br>Class 4: <a href="slides/IT350_set4_CSS.pdf">Cascading Style Sheets</a> </center><center><br><font color="red"> <span style="color:red; font-weight:bold">Read 4th edition: Ch. 5. You can skim 5.10, 5.11, 5.13<br/>5th edition: Ch. 4. You can skim 4.12 </span></font></center></td>
+	<td width="14%" height="86pt">6<center><br>Class 5: <a href="slides/IT350_set5_CSS2.pdf">Cascading Style Sheets Part 2</a> <!-- <br /> <br /> <a href = "solutions/set5_ex1.html">Ex 1 solution</a>  <br /> <a href = "solutions/set5_ex2_sol.html">Ex 2 solution</a> <br /> <a href = "solutions/set5_ex3.html">Ex 3 solution</a> -->  </center></td>
+	<td width="14%" height="86pt">7</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">8<center><br><font color='green'>Week 4</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">9<center><br><font color="red"> <span style="color:red; font-weight:bold">Lab 2 Due 2359</span></font></center></td>
+	<td width="14%" height="86pt">10<center><br>Class 6: <a href = "slides/IT350_set6_HCI.pdf">HCI: Perception, Memory, and Problem Solving</a> </center><center><br>Lab 3: <a href="labs/lab03/Lab03.htm">CSS</a> </center><center><br><font color="red"> <span style="color:red; font-weight:bold">Blackboard 9.1 Online Quiz Due at 0900 (from CSS - 4th edition Ch.5 or 5th edition Ch. 4)</span></font></center></td>
+	<td width="14%" height="86pt">11</td>
+	<td width="14%" height="86pt">12<center><br>lab work in MI392</center></td>
+	<td width="14%" height="86pt">13<center><br>lab work in MI392</center></td>
+	<td width="14%" height="86pt">14</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">15<center><br><font color='green'>Week 5</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">16<center><br><font color="red"> <span style="color:red; font-weight:bold">Lab 3 Due 2359</span></font></center></td>
+	<td width="14%" height="86pt">17<center><br>Class 7: <a href="slides/IT350_set7_design.pdf">Web Design </a>  </center><center><br>Lab 4: <a href="labs/lab04/Lab04.htm">Web Design and HCI</a> </center><center><br><font color="red"> <span style="color:red; font-weight:bold">Read <a href="design.html">Design Docs</a></span></font></center></td>
+	<td width="14%" height="86pt">18</td>
+	<td width="14%" height="86pt">19<center><br>TBA</center></td>
+	<td width="14%" height="86pt">20<center><br>TBA</center></td>
+	<td width="14%" height="86pt">21</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">22<center><br><font color='green'>Week 6</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">23<center><br><font color="red"> <span style="color:red; font-weight:bold">Lab 4 Due 2359</span></font></center></td>
+	<td width="14%" height="86pt">24<center><br>Class 8: <a href="slides/IT350_set8_JavaScript.pdf">Intro to JavaScript</a> <!-- <br /> <br /> <a href = "solutions/set8_ex1.html">Ex 1 solution</a>  <br /> <a href = "solutions/set8_ex2.html">Ex 2 solution</a> <br /> <a href = "solutions/set8_ex3_sol.html">Ex 3 solution</a> <br /> --></center><center><br>Lab 5: <a href="labs/lab05/Lab05.htm">JavaScript Intro</a> </center></td>
+	<td width="14%" height="86pt">25</td>
+	<td width="14%" height="86pt">26<center><br>review <!-- <a href = "restricted/Sample_IT350_6wk_Exam.pdf">Review</a> --></center></td>
+	<td width="14%" height="86pt">27<center><br>6 week exam</center></td>
+	<td width="14%" height="86pt">28</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">29<center><br><font color='green'>Week 7</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">30</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+<p></p>
+<a id="October2013"></a><table class="caltable" cellpadding="0" cellspacing="0" border="2" width="95%">
+<tr align="center" valign="middle">
+<td colspan="7" align="center" valign="middle"><font size="+3">October 2013</font></td></tr>
+<tr align="center" valign="middle">
+	<td width="14%">Sunday</td>
+	<td width="14%">Monday</td>
+	<td width="14%">Tuesday</td>
+	<td width="14%">Wednesday</td>
+	<td width="14%">Thursday</td>
+	<td width="14%">Friday</td>
+	<td width="14%">Saturday</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86">&nbsp;</td>
+	<td width="14%" height="86">&nbsp;</td>
+	<td width="14%" height="86pt">1<center><br></center><center><br><br /><br />Java script intro lab work </center><center><br><font color="red"> 6-Week Grades Due</font></center></td>
+	<td width="14%" height="86pt">2</td>
+	<td width="14%" height="86pt">3<center><br>TBA</center></td>
+	<td width="14%" height="86pt">4<center><br>Class 9: <a href="slides/IT350_set9_JavaScriptFunctions.pdf">JavaScript Functions</a> <!-- <br /> <br /> <a href = "solutions/set9_ex1_sol.html">Ex 1 solution</a>  <br /> <a href = "solutions/set9_ex2.html">Ex 2 solution</a> <br/> <a href = "solutions/set9_ex3_sol.html">Ex 3 solution</a> <br /> --></center></td>
+	<td width="14%" height="86pt">5</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">6<center><br><font color='green'>Week 8</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">7</td>
+	<td width="14%" height="86pt">8<center><br>Class 10: <a href="slides/IT350_set10_JavaScriptArraysObjects.pdf">JavaScript Arrays,Objects </a> <!-- <br /> <br /> <a href = "solutions/set10_ex1_sol.html">Ex 1 solution</a> --></center><center><br>Lab 6: <a href="labs/lab06/Lab06.htm">JavaScript Functions/Arrays/Objects</a> <!--  <br /> <br /> <a href = "solutions/money.html">Lab solution</a> --></center></td>
+	<td width="14%" height="86pt">9</td>
+	<td width="14%" height="86pt">10<center><br>TBA</center></td>
+	<td width="14%" height="86pt">11<center><br>TBA</center></td>
+	<td width="14%" height="86pt">12</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">13<center><br><font color='green'>Week 9</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">14<center><br><font color="red"> Columbus Day</font></center></td>
+	<td width="14%" height="86pt">15<center><br>Class 11: <a href="slides/IT350_set11_DHTML.pdf">DHTML</a> <!-- <br /> <br /> <a href = "solutions/set11_ex1_sol.html">Ex 1 solution</a>  <br /> <a href = "solutions/set11_ex2_sol.html">Ex 2 solution</a> <br /> <a href = "solutions/set11_ex3_sol.html">Ex 3 solution</a> --></center><center><br>Lab 7: <a href="labs/lab07/Lab07.htm">DHTML: Game Time!</a> <!-- <br /> <br /> <a href = "solutions/game_solution.html">Lab solution</a> --></center></td>
+	<td width="14%" height="86pt">16</td>
+	<td width="14%" height="86pt">17<center><br>TBA <!-- lab work --></center></td>
+	<td width="14%" height="86pt">18<center><br>Class 12: <a href="slides/IT350_set12_Perl.pdf">Perl and CGI</a><br/><br/><span style="color:red; font-weight:bold"><a href = "restricted/iw3htp3_25_Perl.pdf">Perl reading</a></span> <!-- <br/><br/><a href = "solutions/set12_ex1_sol.txt">Ex1 solution</a> --></center></td>
+	<td width="14%" height="86pt">19</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">20<center><br><font color='green'>Week 10</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">21</td>
+	<td width="14%" height="86pt">22<center><br>Class 13: <a href="slides/IT350_set13_PerlFunctions.pdf">Perl functions</a>  <!-- <br /> <br /> <a href = "solutions/set13_ex1_sol.txt">Ex 1 solution</a>  <br /> <a href = "solutions/set13_ex2_sol.txt">Ex 2 solution</a> <br /> <a href = "solutions/set13_ex3_sol.txt">Ex 3 solution</a>  <br /> <a href = "solutions/set13_ex4_sol.txt">Ex 4 solution</a> <br /> <br/> --></center><center><br>Lab 8: <a href="labs/lab08/Lab08.htm">CGI with Perl</a> </center></td>
+	<td width="14%" height="86pt">23</td>
+	<td width="14%" height="86pt">24<center><br>TBA</center></td>
+	<td width="14%" height="86pt">25<center><br>Class 14: <a href="slides/IT350_set14_PerlMisc.pdf">Perl misc</a><br/><br/><a href="project/USNASocialNetworkProject.htm">Project start</a></center></td>
+	<td width="14%" height="86pt">26</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">27<center><br><font color='green'>Week 11</font>&nbsp;</center><center><br><font color="red"> X-week</font></center></td>
+	<td width="14%" height="86pt">28</td>
+	<td width="14%" height="86pt">29<center><br>Class 15: <a href="slides/IT350_set15_Cookies.pdf">Perl and Java Script cookies</a> <!-- <br /> <br /> <a href = "solutions/set15_ex1_sol.txt">Ex 1 solution</a>  <br /> <a href = "solutions/set15_ex2_sol.txt">Ex 2 solution</a> --></center><center><br>Lab 9: <a href="labs/lab09/Lab09.htm">Lab 9: Files and Cookies</a> <!-- <br/> <br/> <a href = "solutions/cookie_js.html">Lab solution JS</a> <br/> <a href = "solutions/cookie_perl.txt">Lab solution Perl</a> --></center></td>
+	<td width="14%" height="86pt">30</td>
+	<td width="14%" height="86pt">31<center><br>review <!-- <br /> <br/><a href="restricted/Sample_IT350_12wk_Exam.pdf">Sample Exam</a> <br /><a href = "restricted/Sample_IT350_12wk_Exam_Solution.pdf">(solution)</a>  --></center></td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+<p></p>
+<a id="November2013"></a><table class="caltable" cellpadding="0" cellspacing="0" border="2" width="95%">
+<tr align="center" valign="middle">
+<td colspan="7" align="center" valign="middle"><font size="+3">November 2013</font></td></tr>
+<tr align="center" valign="middle">
+	<td width="14%">Sunday</td>
+	<td width="14%">Monday</td>
+	<td width="14%">Tuesday</td>
+	<td width="14%">Wednesday</td>
+	<td width="14%">Thursday</td>
+	<td width="14%">Friday</td>
+	<td width="14%">Saturday</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86">&nbsp;</td>
+	<td width="14%" height="86">&nbsp;</td>
+	<td width="14%" height="86">&nbsp;</td>
+	<td width="14%" height="86">&nbsp;</td>
+	<td width="14%" height="86">&nbsp;</td>
+	<td width="14%" height="86pt">1<center><br>12-week exam    </center></td>
+	<td width="14%" height="86pt">2</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">3<center><br><font color='green'>Week 12</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">4</td>
+	<td width="14%" height="86pt">5<center><br></center><center><br>TBA</center><center><br><font color="red"> 12-Week Grades Due</font></center></td>
+	<td width="14%" height="86pt">6</td>
+	<td width="14%" height="86pt">7<center><br>Class 16: <a href="slides/IT350_set16_Accessibility.pdf"> Accessibility</a><br/><br \><a  href="slides/AcccessibilityRequirements.pdf">Accessibility Points</a><br \> <br /><a  href="http://www.webaim.org/standards/508/checklist">Accessibility Checklist</a></center></td>
+	<td width="14%" height="86pt">8<center><br>Project work</center></td>
+	<td width="14%" height="86pt">9</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">10<center><br><font color='green'>Week 13</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">11<center><br><font color="red"> Veterans Day</font></center></td>
+	<td width="14%" height="86pt">12<center><br></center><center><br>Lab 10: <a href = "slides/IT350_set17_Security.pdf">Security lecture/lab</a> <!-- <br /><a href = "labs/lab10/bufftalk.txt">bufftalk</a> <br /><a href = "labs/lab10/style.css">style.css</a> <br /><a href = "labs/lab10/Buffalo-icon.png">Buffalo-icon.png</a> --></center></td>
+	<td width="14%" height="86pt">13</td>
+	<td width="14%" height="86pt">14<center><br>Project work</center></td>
+	<td width="14%" height="86pt">15<center><br>TBA</center></td>
+	<td width="14%" height="86pt">16</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">17<center><br><font color='green'>Week 14</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">18</td>
+	<td width="14%" height="86pt">19<center><br></center><center><br>TBA</center></td>
+	<td width="14%" height="86pt">20</td>
+	<td width="14%" height="86pt">21<center><br></center></td>
+	<td width="14%" height="86pt">22<center><br>Project presentations - in class</center></td>
+	<td width="14%" height="86pt">23</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">24<center><br><font color='green'>Week 15</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">25</td>
+	<td width="14%" height="86pt">26<center><br>Class 17: Ethics  </center><center><br>TBA</center></td>
+	<td width="14%" height="86pt">27<center><br>TBA</center><center><br><font color="red"> EARLY SCHEDULE</font></center><center><br><font color="red">Friday Schedule</font></center></td>
+	<td width="14%" height="86pt">28<center><br><font color="red"> Thanksgiving</font></center></td>
+	<td width="14%" height="86pt">29<center><br><font color="red"> Thanksgiving</font></center></td>
+	<td width="14%" height="86pt">30</td>
+</tr>
+</table>
+<p></p>
+<a id="December2013"></a><table class="caltable" cellpadding="0" cellspacing="0" border="2" width="95%">
+<tr align="center" valign="middle">
+<td colspan="7" align="center" valign="middle"><font size="+3">December 2013</font></td></tr>
+<tr align="center" valign="middle">
+	<td width="14%">Sunday</td>
+	<td width="14%">Monday</td>
+	<td width="14%">Tuesday</td>
+	<td width="14%">Wednesday</td>
+	<td width="14%">Thursday</td>
+	<td width="14%">Friday</td>
+	<td width="14%">Saturday</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">1<center><br><font color='green'>Week 16</font>&nbsp;</center></td>
+	<td width="14%" height="86pt">2</td>
+	<td width="14%" height="86pt">3<center><br></center><center><br>Lab 11: <a href="slides/IT350_set18_HTTP.pdf">Web protocols</a> <!-- Project work --></center></td>
+	<td width="14%" height="86pt">4</td>
+	<td width="14%" height="86pt">5<center><br>Surveys </center><center><br><font color="red"> Last day of classes</font></center></td>
+	<td width="14%" height="86pt">6<center><br><font color="red"> Reading Day</font></center></td>
+	<td width="14%" height="86pt">7<center><br><font color="red"> Exams</font></center></td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">8</td>
+	<td width="14%" height="86pt">9<center><br><font color="red"> Exams</font></center></td>
+	<td width="14%" height="86pt">10<center><br><font color="red"> Exams</font></center></td>
+	<td width="14%" height="86pt">11<center><br><font color="red"> Exams</font></center></td>
+	<td width="14%" height="86pt">12<center><br><font color="red"> Exams</font></center></td>
+	<td width="14%" height="86pt">13</td>
+	<td width="14%" height="86pt">14</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">15</td>
+	<td width="14%" height="86pt">16<center><br><font color="red"> Exams</font></center></td>
+	<td width="14%" height="86pt">17<center><br><font color="red"> Exams</font></center></td>
+	<td width="14%" height="86pt">18<center><br><font color="red"> Exams</font></center></td>
+	<td width="14%" height="86pt">19</td>
+	<td width="14%" height="86pt">20</td>
+	<td width="14%" height="86pt">21</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">22</td>
+	<td width="14%" height="86pt">23<center><br><font color="red"> Final Grades Due</font></center></td>
+	<td width="14%" height="86pt">24</td>
+	<td width="14%" height="86pt">25</td>
+	<td width="14%" height="86pt">26</td>
+	<td width="14%" height="86pt">27</td>
+	<td width="14%" height="86pt">28</td>
+</tr>
+<tr align="left" valign="top">
+	<td width="14%" height="86pt">29</td>
+	<td width="14%" height="86pt">30</td>
+	<td width="14%" height="86pt">31</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+	<td>&nbsp;</td>
+</tr>
+</table>
+<p></p>
+
+<hr>
+</div>
+</body></html>
+

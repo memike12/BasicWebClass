@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+  <!-- Main IT350 web page -->
+
+<html>
+
+
+<head>
+  <meta charset = "utf-8" />
+  <title>IT 350 - Web and Internet Programming - Fall 2013 </title>
+  <link rel = "stylesheet" type = "text/css" href = "style.css">
+</head>
+
+<body>
+<div class="container">
+	<!--#include file ="header.html" -->
+<div class="header">
+  <h1> IT 350 - Web and Internet Programming - Fall 2013 </h1>
+</div>
+  <!-- Table for course staff and their contact info -->
+  <h3>Course Staff</h3>
+
+  <table class="caltable" border="1" >
+     <thead>
+       <tr>
+         <th>Instructor</th>
+		 <th>Phone</th>
+         <th>Email</th>
+		 <th>Office</th>
+         <th>Office hours</th>
+       </tr>
+     </thead>
+
+     <tbody>
+       <tr>
+        <td>Asst Prof. <a href="/Users/cs/adina/" >Adina Cr&#259;iniceanu</a> </td>
+        <td>3-6822</td>
+        <td>adina at usna.edu </td>
+		<td>MI362</td>
+        <td>Stop in anytime, or make an appointment to be assured of availability. Research day is Wednesday.</td>
+       </tr>
+	   </tbody>
+  </table> 
+  
+  <!--
+
+  <h3>Perl installation</h3>
+	<ol>
+	  <li>Go to Download Perl above. click "Get Active Perl", then "Free Download", then "Continue", then "AS package" under Windows.</li>
+          <li>Save the .zip file you get somewhere (e.g. c:/temp)</li>
+          <li>Open c:/temp and double-click on the zip file.  This should open WinZip or something.  Click "Extract" , then extract all the files to c:/temp/perl. </li>
+          <li>Open c:/temp/perl/ and Double-click on "install.bat".  If you are asked, click "Extract All" before proceedings. </li>
+          <li>This should open up a command prompt that runs the installation.  Just pick the default location and "y" to every question.</li> 
+	  <li> When finished, log out and log back in.  Perl should now be available on your machine.  If you have problems, open ControlPanel, go to System, select Advanced tab, and click Environment variables.  Make sure C:\perl\bin is part of your path.</li>
+	 </ol>
+
+
+	<hr/>
+	
+	<h3>Double-click deletes my Perl files!</h3>
+
+	<p>Apparently some of you have some kind of movie player called WinIEPG on your Bancroft PCs.  Your computer tries to run this when you double-click on a .pl file.  You then get a weird error and it deletes your file.</p>
+
+        <p>I recommend you do this:</p>
+           <ol>
+             <li>Make a copy of some perl file (cut and paste is easiest).  Rename it test.pl.</li>
+             <li>Right-click on test.pl.  Pick "Open With" -> "Choose Program".  </li>
+             <li>Select Crimson Editor or Notepad.  Then check "Always use the selected program to open this kind of file.  Click OK.</li>
+             <li>Log out and log back in.  Double-click on test.pl to make sure it opens Crimson Editor.  Your other files should work too now -try it with a backup .pl file.</li>
+           </ol>
+        <p>NOTE: if your PC profile ever gets wiped for some reason, Windows will forget about this and may revert to the WinIEPG of death program.  So be careful and make backups!  You might consider uninstalling WinIEPG if you don't use it.</p>
+
+-->	
+        
+  <!-- Add in footer:  contact info and validation button -->
+  <p><br/><br/> </p>
+  <hr/>
+  <p><a id="bottom">For</a> problems with this page, contact <a href="/Users/cs/adina">Adina Crainiceanu</a></p>
+
+
+  <!-- ***************************************************************
+       Below this point is text you should include on every IT350 page
+       *************************************************************** -->
+
+  <!-- Below is a script to output the time at which this page was last modified.
+       Later in the course we will learn how this works.  -->
+  <!-- This makes a button you can click on to validate your page - also include this on every page -->
+  <p>
+  	<script type = "text/javascript">
+	 document.write('<a href="http://zee.cs.usna.edu:8888/?doc='+document.location+'">' +
+        '<img src="http://www.w3.org/html/logo/img/mark-word-icon.png"'+
+		'alt="Valid HTML 5!" height="50" width="50" />'+
+      '</a>');
+	</script>  
+     This page last modified 
+    <script type="text/javascript">
+      document.write(document.lastModified);
+    </script>
+  </p>
+</div>
+</body>
+
+</html>
+  

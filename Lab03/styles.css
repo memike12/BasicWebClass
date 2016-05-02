@@ -1,0 +1,44 @@
+/*External Style Sheet */
+/* Michael Moore */
+/* 1644888 */
+
+body { 	background-image: /*url(GreyBackgroun1d.jpg)*/;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		/*background-color: #595959;*/
+		background: rgba( 0, 0, 0, .6); /*The a is opacity*/}
+p	{ 	text-decoration: none;
+		text-align: left;
+		font-weight: normal;}
+h1, h2, h3, ul, li, p, caption, table	
+	{ 	text-align: /*center*/;
+		color: #fff;
+		text-shadow: -1px -1px 5px #000, 
+					1px -1px 5px #000, 
+					-1px 1px 5px #000, 
+					1px 1px 5px #000;
+		z-index: 3;}
+a 	{	color: orange}
+caption 	
+	{	font-size: 20pt;}
+table , p, ul
+	{	font-size: 16pt;}
+		
+.thickcenter{	
+		border-width: thick;
+		border-style: outset;
+		text-align: center;}
+.redtext {
+		color: red;
+		font-size: 20pt;
+		text-shadow: -1px -1px 5px #000, 
+					1px -1px 5px #000, 
+					-1px 1px 5px #000, 
+					1px 1px 5px #000;}
+.floatright {
+		padding: .5em;
+		margin-left: 1em;
+		margin-bottom: 1em;
+		float: right;}
+		
+

@@ -1,0 +1,12 @@
+Mike 	 memike12 	  	 (555)555-5555 	 no 	 CivilianFoo 	 Bar 	  	 (555)555-5555 	 yes 	 CivilianFoo 	 Bar 	  	 (555)555-5555 	 yes 	 Civilian rFoo 	 Bar 	  	 (555)555-5555 	 yes 	 Civilian rFoo 	 Bar 	  	 (555)555-5555 	 yes 	 Civilian rasdf 	 sadf 	  	 (555)555-5555 	 no 	 Government Employee rasdff 	 asdf 	  	 (555)555-5555 	 no 	 Civilian 
+lasdff 	 asdf 	  	 (555)555-5555 	 no 	 Civilian 
+asdff 	 asdf 	  	 (555)555-5555 	 no 	 Civilian 
+Foo 	 Bar 	  	 (555)555-5555 	 yes 	 Civilian 
+Foo 	 Bar 	  	 
+				(555)555-5555 	 yes 	 Civilian 
+Foo 	 Bar 	  	 
+				(555)555-5555 	 yes 	 Civilian 
+AC 	 Bar 	  	 
+				(555)555-5555 	 yes 	 Civilian 
+Foo 	 Bar 	  	 
+				(555)555-5555 	 yes 	 Civilian 

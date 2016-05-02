@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+
+<html>
+   <head>
+      <meta charset = "utf-8" />
+	  <title>Game Time!</title>  
+
+      <script type = "text/javascript">
+         <!--
+
+         // Number of rows and columns in TileArray 
+         var NUM_ROWS = 3;
+         var NUM_COLS = 3;
+		 var blankRow = 2;
+		 var blankCol = 0;
+
+         /* Tile Array keeps track of what JPG image should appear in which spot in the HTML table.
+          * So initially "img00.jpg" should appear in the top left corner of the table, but this 
+          * may change as the game is played. 
+          * Your general strategy should be to modify TileArray to reflect changes in the tile
+          * locations, then copy the contents of this array to the HTML table. 
+          * The "hole" is represented by an empty filename, e.g. ""
+          */
+         var TileArray  = [ [ "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img00.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img01.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img02.jpg" ],
+                            [ "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img10.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img11.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img12.jpg" ],
+                            [ "http://www.usna.edu/Users/cs/adina/teaching/it350/img/empty.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img21.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img22.jpg" ] ];
+		var empty = "http://www.usna.edu/Users/cs/adina/teaching/it350/img/empty.jpg";
+		var origonalArray = [ [ "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img00.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img01.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img02.jpg" ],
+                            [ "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img10.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img11.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img12.jpg" ],
+                            [ "http://www.usna.edu/Users/cs/adina/teaching/it350/img/empty.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img21.jpg", 
+                              "http://www.usna.edu/Users/cs/adina/teaching/it350/img/img22.jpg" ] ];
+
+         // This function prints out the value of the 2-dimensional array 'someArray'.
+         // This is just to demonstrate how to use a 2-dimensional array
+         function testFunction() 
+			{
+	        var testArray = [ ["apple",  "banana",   "cookie" ],
+	                           ["dog",    "elephant", "fox"    ] ];
+	        var numRows = 2;
+	        var numCols = 3;
+	                           
+	        for (var row=0; row < numRows; row++) 
+				{
+	            for (var col=0; col < numCols; col++) 
+					{
+		           document.writeln("<br/>Value in ("+row+","+col+") is "+testArray[row][col]);   
+					}
+				}
+			}
+		
+		//This either resets the game or loads the pictures to replace the monkeys
+		function loadImagesFromArray() 
+			{
+			var NumRows = 3;
+			var NumCols = 3;
+			blankRow = 2;
+			blankCol = 0;
+			for (var row=0; row < NumRows; row++) 
+				{
+	            for (var col=0; col < NumCols; col++) 
+					{
+					//convert to a string then concat it to make a valid ID
+					var iD = row.toString()+ col.toString();
+					var domLink=document.getElementById(iD);
+					//changes the source of the Domlink to the origional image
+					domLink.src = origonalArray[row][col]
+					TileArray[row][col] = origonalArray[row][col];
+					}
+				}
+			}
+		 
+		 //This makes sure they made a legal click then switches the tiles
+		 function moveImage (row, col)
+			{
+			//makes sure that their click is legal
+			if (((blankRow == (row + 1)) && (blankCol == col )) || 
+				((blankRow == (row - 1)) && (blankCol == col)) ||
+				((blankRow == row ) && (blankCol == (col + 1))) ||
+				((blankRow == row ) && (blankCol == (col - 1))))
+				{
+				//get the ID of the blank picture
+				var iD = blankRow.toString()+ blankCol.toString();
+				// say that you are working with that space
+				var domLink=document.getElementById(iD);
+				// Now declare the source of the new picture to fill the space
+				domLink.src = TileArray[row][col];
+				//ID for the old blank 
+				var iDnewBlank = row.toString() + col.toString();
+				//This will change over to the old space
+				domLink=document.getElementById(iDnewBlank);
+				//now the source of the old space is the blank space
+				domLink.src = TileArray[blankRow][blankCol];
+				// sets the new blank space
+				var holder = TileArray[row][col];
+				TileArray[row][col] = TileArray[blankRow][blankCol];
+				TileArray[blankRow][blankCol] = holder;
+				blankRow = row;
+				blankCol = col;
+				}
+			// alert for ilegial click
+			else
+				window.alert ( "Please click a vaild block to slide.")
+			}
+			
+		// When the user clicks shuffle the game will randomly shuffle
+		function shuffle()
+			{
+			var number = document.getElementById("SHUFFLE").value;
+			//makes sure that their shuffle is leagle
+			if (number <= 20 && number >= 0 )
+				{
+				//loop for how many times they specified when they clicked shuffle
+				for (var times = 0; times < number; times++)
+					{
+					var dir = (Math.floor(Math.random()*100));
+					//using the randomly generated direction the function will send the blank square around
+						if (blankRow == 0 && blankCol == 0)
+						{
+							dir = dir%2;
+							if (dir = 1)
+							{
+								moveImage(0,1);
+							}
+							else
+							{
+								moveImage(1,0);
+							}
+						}
+						else if (blankRow == 0 && blankCol == 1)
+						{
+							dir = dir%3;
+							if (dir = 1)
+							{
+								moveImage(0,2);
+							}
+							else if (dir = 0)
+							{
+								moveImage(1,1);
+							}
+								else
+							{
+								moveImage(0,0);
+							}
+						}
+						else if (blankRow == 0 && blankCol == 2)
+						{
+							dir = dir%2;
+							if (dir = 1)
+							{
+								moveImage(1,2);
+							}
+							else
+							{
+								moveImage(0,1);
+							}
+						}
+						else if (blankRow == 1 && blankCol == 0)
+						{
+							dir = dir%3;
+							if (dir = 0)
+							{
+								moveImage(1,1);
+							}
+							else if (dir = 1)
+							{
+								moveImage(0,0);
+							}
+							else
+							{
+								moveImage(2,0);
+							}
+						}
+						else if (blankRow == 1 && blankCol == 1)
+						{
+							dir = dir %4;
+							if (dir = 0)
+							{
+								moveImage(0,1);
+							}
+							else if (dir = 1)
+							{
+								moveImage(1,0);
+							}
+							else if (dir = 3)
+							{
+								moveImage(2,1);
+							}
+							else 
+							{
+								moveImage(1,2);
+							}
+						}
+						else if (blankRow == 1 && blankCol == 2)
+						{
+							dir = dir % 3;
+							if (dir = 0)
+							{
+								moveImage(0,2);
+							}
+							else if (dir = 1)
+							{
+								moveImage(1,1);
+							}
+							else
+							{
+								moveImage(2,2);
+							}
+						}
+						else if (blankRow == 2 && blankCol == 0)
+						{
+							dir = dir%3;
+							if (dir = 0)
+							{
+								moveImage(1,0);
+							}
+							else 
+							{
+								moveImage(2,1);
+							}
+						}	 
+						else if (blankRow == 2 && blankCol == 1)
+						{
+							dir = dir%3;
+							if (dir = 0)
+							{
+								moveImage(1,2);
+							}
+							else if (dir = 1)
+							{
+								moveImage(2,2);
+							}
+							else
+							{
+								moveImage(2,0);
+							}
+						}		
+						else if (blankRow == 2 && blankCol == 2)
+						{
+							dir = dir % 2;
+							if (dir = 1)
+							{
+								moveImage(1,2);
+							}
+							else
+							{
+								moveImage(2,1);
+							}
+						}
+					}
+				}
+				else
+				//warning for illeagel move
+					{
+					window.alert ( "Enter a number between 1 and 20.")
+					}
+				
+			}
+			
+			// When the user clicks shuffle the background will change to what ever they specify
+			function backgroundChange()
+			{
+				document.body.style.backgroundColor = document.getElementById("newColor").value;
+			}
+         // --> 
+      </script>
+
+   </head>
+
+<body>
+
+<form>
+
+<!-- Nested table  -->
+<table id="mytable" role = "presentation">
+<tr><td >
+
+<!-- First table is for the moving tiles and buttons -->
+<table id="game" role = "shufflergame">
+
+   <tr> <td style = "text-align:center" colspan="3"> The puzzle: </td> </tr>
+  <tr> 
+     <td> <img id="00" onclick="moveImage(0,0)" src="http://www.usna.edu/Users/cs/adina/teaching/it350/img/monkey.jpg" width="144" height="101"  alt="Game tile" /> </td>
+     <td> <img id="01" onclick="moveImage(0,1)" src="http://www.usna.edu/Users/cs/adina/teaching/it350/img/monkey.jpg" width="144" height="101"  alt="Game tile" /> </td>
+     <td> <img id="02" onclick="moveImage(0,2)" src="http://www.usna.edu/Users/cs/adina/teaching/it350/img/monkey.jpg" width="144" height="101"  alt="Game tile" /> </td>    
+  </tr>
+  <tr> 
+     <td> <img onclick="moveImage(1,0)" id="10" src="http://www.usna.edu/Users/cs/adina/teaching/it350/img/monkey.jpg" width="144" height="101"  alt="Game tile" /> </td>
+     <td> <img onclick="moveImage(1,1)" id="11" src="http://www.usna.edu/Users/cs/adina/teaching/it350/img/monkey.jpg" width="144" height="101"  alt="Game tile" /> </td>
+     <td> <img onclick="moveImage(1,2)" id="12" src="http://www.usna.edu/Users/cs/adina/teaching/it350/img/monkey.jpg" width="144" height="101"  alt="Game tile" /> </td>    
+  </tr>
+  <tr> 
+     <td> <img onclick="moveImage(2,0)" id="20" src="http://www.usna.edu/Users/cs/adina/teaching/it350/img/monkey.jpg" width="144" height="101"  alt="Game tile" /> </td>
+     <td> <img onclick="moveImage(2,1)" id="21" src="http://www.usna.edu/Users/cs/adina/teaching/it350/img/monkey.jpg" width="144" height="101"  alt="Game tile" /> </td>
+     <td> <img onclick="moveImage(2,2)" id="22" src="http://www.usna.edu/Users/cs/adina/teaching/it350/img/monkey.jpg" width="144" height="101"  alt="Game tile" /> </td>    
+  </tr>
+</table>
+
+</td>
+
+<!-- Second table is the original image.  Shows up on the right -->
+<td>
+<table>   
+   
+   <tr> <td style = "text-align:center"> Original image: </td> </tr>
+   <tr> <td> <img src="http://www.usna.edu/Users/cs/adina/teaching/it350/img/bancroft.jpg" alt="Original image" /> </td> </tr>
+     
+</table>
+</td>
+</tr>
+
+<!-- Finally a separate row for buttons and things -->
+  <tr> 
+     <td colspan="2" style = "text-align:center"> 
+        Background color: <input type="text" size="3" id="newColor" name="mycolor" value="white" />
+        <br/>Number of steps to shuffle: <input id="SHUFFLE" type="text" value="1" size="3" name="numSteps" />
+        <br/>
+        <input type="button" value="Load Puzzle" onclick="loadImagesFromArray()" /> 
+        <input type="button" value="Shuffle" onclick="shuffle(); backgroundChange();" /> 
+     </td> 
+   </tr>
+
+</table>
+
+</form>
+
+
+<!-- This shows how you can call JavaScript from within the body of your HTML.  
+     Make sure you put the <script> and </script> tags on a line by themselves. 
+     You might want to put additional test code here.
+     An advantage of JavaScript here is that it executes AFTER the table above has loaded,
+     which is not true of JavaScript that is in the <head> 
+     -->
+<script type="text/javascript">
+
+  
+	testFunction();
+</script>
+
+</body>
+</html>
+
+

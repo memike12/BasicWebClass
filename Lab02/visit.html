@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- Michael Moore -->
+<!-- 164488 -->
+
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Plan a Visit</title>
+</head>
+
+<body>
+
+  <h1> Schedule a Visit to the USS Abraham Lincoln! </h1>
+
+  <p>Please fill in all the information below to visit the Lincoln</p>
+
+  
+  <!-- The method post is used so the user cannot manipulate the data from the URL -->
+  <!-- The action is going to a pre-made website -->
+ <form method = "post" action = "http://www.usna.edu/Users/cs/adina/teaching/it350/tools/FormChecker/submit.cgi">
+	<input type = "hidden" name = "recipient" value = "m164488@usna.edu">
+	<input type = "hidden" name = "subject" value = "Request for Visit">
+	<input type = "hidden" name = "redirect" value = "index.html">
+ 
+	<!-- a few text boxes for the user to input data -->
+	<p><label>Full Name:
+		<input name = "name" type = "text" size = "25" maxlength = "30">
+		</label></p>
+		
+		<p><label>Make up a User name:
+		<input name = "UserName" type = "text" size = "25" maxlength = "30">
+		</label></p>
+		
+		<!-- a hidden textbox -->
+		<p><label>Password:
+		<input name = "pass" type = "password" size = "25" maxlength = "30">
+		</label></p>
+		
+		<!-- This is a checkbox list -->
+		<p><strong>Which AOR's interest you?</strong>
+			<br>
+			<label> Engineering
+			<input name = "intrest" type = "checkbox" value = "engineering"></label>
+			<br><label> Combat Systems
+			<input name = "intrest" type = "checkbox" value = "combatSystems"></label>
+			<br><label> The Bridge
+			<input name = "intrest" type = "checkbox" value = "bridge"></label>
+			<br><label> Deck Department
+			<input name = "intrest" type = "checkbox" value = "deck"></label>
+			<br><label> Air Department
+			<input name = "intrest" type = "checkbox" value = "air"></label>
+			<br><label> Air Traffic Control
+			<input name = "intrest" type = "checkbox" value = "CATCC"></label>
+			<br><label> Intelligence
+			<input name = "intrest" type = "checkbox" value = "intel"></label>
+			<br><label> Planes and Helicopters
+			<input name = "intrest" type = "checkbox" value = "fly"></label>
+		</p>
+		
+		<p>
+			<strong>Have you been to the Lincoln before?</strong>
+			<!-- Radio Buttons -->
+			<label> Yes
+				<input name = "beenBefore" type = "radio" value = "yes"> </label>
+			<label> No
+				<input name = "beenBefore" type = "radio" value = "no" checked> </label>
+		</p>
+		
+		<p>
+			<label>What is your occupation?
+			<!-- Drop down list -->
+				<select name = "occupation">
+					<option selected>Civilian</option>
+					<option>Government Employee</option>
+					<option>Government Contractor</option>
+					<option>Military</option>
+				</select>
+			</label>
+		</p>
+		
+		<p>
+			<!-- multiline text box -->
+			<label>Anything else you would like us to know?<br>
+				<textarea name = "comments"
+				rows = "4" cols = "36">Enter comment here. </textarea>
+			</label>
+		</p>
+		
+		<p>
+			<input type = "submit" value = "Submit">
+			<input type = "reset" value = "Clear">
+		</p>
+	</form>
+  <!-- ***************************************************************
+       Below this point is text you should include on every IT350 page
+       *************************************************************** -->
+
+  <!-- Below is a script to output the time at which this page was last modified.
+       Later in the course we will learn how this works.  -->
+  <!-- This makes a button you can click on to validate your page - also include this on every page -->
+  <p><br/><br/> </p>
+  <hr/>
+  <p>
+   	<script type = "text/javascript">
+	 document.write('<a href="http://zee.cs.usna.edu:8888/?doc='+document.location+'">' +
+        '<img src="http://www.w3.org/html/logo/img/mark-word-icon.png"'+
+		'alt="Valid HTML 5!" height="50" width="50" />'+
+      '</a>');
+	</script>  
+    This page last modified 
+    <script type="text/javascript">
+      document.write(document.lastModified);
+    </script>
+  </p>
+
+
+</body>
+
+</html>
+  

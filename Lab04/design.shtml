@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html>
+
+
+<head>
+  <meta charset = "utf-8"/>
+  <title>IT 350 - Assigned Reading on Web Design </title>
+  <link rel = "stylesheet" type = "text/css" href = "calstyle.css">
+</head>
+
+<body>
+<div class="container">
+	<!--#include file ="header.html" -->
+  <!-- Instructions -->
+<div class="header">
+  <h1> Assigned Reading on Web Design</h1>
+</div>
+
+  <p><b>Instructions:</b> Read and consider the three articles described below, answer the questions given, and
+  submit your answers using this week's Blackboard 9.1 quiz.  We recommend that you first write your
+  answers in a separate text file, then paste them into Blackboard when you are finished.</p>
+
+  <p>The Blackboard quiz has no time limit and you can submit it more than once if
+  something goes wrong. <b> You must complete the quiz
+  before 0900 on Tuesday</b> </p>
+
+  <!-- List of articles to read and questions to answer -->
+  <ul>
+     <li>Read <a href="http://www.useit.com/alertbox/9605.html">Top
+     Ten Mistakes in Web Design</a>.<br/>
+     <b>Quiz question: </b> Using your own words, summarize in 1-2
+     sentences the one web design mistake discussed in this article
+     that you find most annoying or see most often. 
+     </li>
+
+     <li>Read <a href="http://www.useit.com/alertbox/20030825.html">
+     Usability 101: Introduction to Usability</a>. <br/>
+     <b>Quiz question:</b> Using your own words, summarize in 1-2 sentences
+     what you found to be the most important idea in this article.
+     </li>
+
+     <li>Edward Tufte has some very interesting ideas on graphical design in general.  Some of his
+     ideas are discussed on the web, but I highly recommend his books.  For now, read this
+     article describing his <a href="http://www.kuro5hin.org/story/2001/9/7/234449/3992">thoughts 
+     on web design</a> (at a minium, read until the comments from other users start). <br/>
+     <b>Quiz question:</b> Some of Tufte's principles contradict other things you have just read.
+     Consider these principles, and take a look at <a href="http://www.edwardtufte.com">Edward Tufte's web
+     site</a> to get a feel for a design that embodies them.  In a few sentences describe why you think 
+     his ideas work (or why you think they do not).</li>
+
+  </ul>
+
+  
+  <!-- ***************************************************************
+       Below this point is text you should include on every IT350 page
+       *************************************************************** -->
+
+  <!-- Below is a script to output the time at which this page was last modified.
+       Later in the course we will learn how this works.  -->
+  <!-- This makes a button you can click on to validate your page - also include this on every page -->
+  <p><br/><br/> </p>
+  <hr/>
+  <p>
+   	<script type = "text/javascript">
+	 document.write('<a href="http://zee.cs.usna.edu:8888/?doc='+document.location+'">' +
+        '<img src="http://www.w3.org/html/logo/img/mark-word-icon.png"'+
+		'alt="Valid HTML 5!" height="50" width="50" />'+
+      '</a>');
+	</script>  
+    This page last modified 
+    <script type="text/javascript">
+      document.write(document.lastModified);
+    </script>
+  </p>
+</div>
+</body>
+
+</html>
+

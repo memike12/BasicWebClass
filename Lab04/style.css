@@ -1,0 +1,111 @@
+
+@media all{
+.caltable {
+  border-style: solid; 
+  border-collapse: collapse; 
+  border-width: 2px; 
+  border-color: #64D464;
+
+  width: 100%;
+  height: 95%;
+}
+
+body{
+	/* image from http://www.b2egroup.net/wp-content/uploads/2013/09/matrix.gif */
+  background-color:#CFCFCF;
+	}
+
+td { 
+  border-width:1px;
+  border-style: solid; 
+  empty-cells: show;
+}
+
+ul
+{
+list-style-type:none;
+margin:2px;
+margin-left:3%;
+padding:2px;
+overflow:hidden;
+}
+
+li
+{
+float:left;
+display:inline;
+}
+
+a.navbar:link,a.navbar:visited
+{
+display:block;
+width:;
+font-weight:bold;
+color:#000000;
+background-color:#B8B82C;
+text-align:center;
+padding:3px;
+text-decoration:none;
+text-transform:uppercase;
+}
+
+a.navbar:hover,a.navbar:active
+{
+background-color:#FAFA3C;
+}
+
+a{
+color:#B8B82C
+}
+
+div.container
+{
+width:80%;
+margin-left:5%;
+margin-right:1%;
+margin-bottom:5%;
+border:2px solid #B8B82C;
+line-height:150%;
+background: black;
+color: #B8B82C;
+}
+
+div.header,div.footer
+{
+padding:0.5em;
+color:black;
+background-color:#B8B82C;
+clear:left;
+}
+
+h1.header
+{
+padding:0;
+margin:0;
+}
+}
+
+@media print{
+	div.container
+	{
+		width:80%;
+		margin-left:5%;
+		margin-right:1%;
+		margin-bottom:5%;
+		border:2px solid black;
+		line-height:150%;
+		background: white;
+		color: black;
+	}   
+	.caltable
+	{
+	 	border-color: #CFCFCF;
+	}
+	a
+	{
+		color:black;
+		text-decoration:none;
+	}
+
+	
+}

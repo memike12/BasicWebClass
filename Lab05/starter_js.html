@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<!-- A bare bones web page to start IT350 assignments with --> 
+
+<html>
+
+<head>
+  <meta charset = "utf-8" />
+  <title>IT 350 - Starter page</title>
+
+  <script type="text/javascript" >
+     <!--
+  
+     // BELOW IS JAVASCRIPT YOU SHOULD PROBABLY LEAVE ALONE
+  
+	// Debug helper functions                                                                                                                               
+     // Use my_writeln() instead of document.writeln().                                                                                                      
+     // Then when script is finished, call my_finish() to output                                                                                             
+     // the contents of all my_writeln() calls to a visible text area box.                                                                                   
+     var _alldata = "";                                                                                                                                      
+                                           
+     // Call this function everytime instead of document.writeln()
+     // It will call document.writeln() for you, but also save contents for friendly output later.         
+     // It is helpful to add \n at the end of strings that logically form a line, to make the output easier to read later.                                                                                                         
+     function my_writeln(str) {                                                                                                                              
+         // Output to the document                                                                                                                           
+         document.writeln(str);                                                                                                                              
+
+         // Save for later                                                                                                                                                       
+		 str += "\n";    
+         _alldata += str;                                                                                                                                    
+     }                                                                                                                                                       
+
+     // Call this function everytime instead of document.write()
+     // It will call document.write() for you, but also save contents for friendly output later.         
+     function my_write(str) {                                                                                                                              
+         // Output to the document                                                                                                                           
+         document.write(str);                                                                                                                              
+
+         // Save for later                                                                                                                                                       
+		 
+         _alldata += str;                                                                                                                                    
+     }	 
+	 
+     // Call this function when finish using JavaScript to see all of the JS output.
+     // This only works if you have called my_writeln() everytime instead of document.writeln().                                                           
+     function my_finish() {                                                                                                                                  
+         document.writeln("<form><textarea cols=\"120\" rows=\"20\">"+_alldata+"</textarea></form>");                                                         
+     }                                     
+     
+     // ************************************************************
+     // START YOUR JAVASCRIPT HERE.  A SIMPLE EXAMPLE IS GIVEN BELOW
+     // ************************************************************
+     
+     // This code creates N dummy links
+     var numLinks = window.prompt("How many links would you like?");
+     
+     for (ii = 0; ii < numLinks ; ii++) {
+       // Note - using my_writeln instead of document.writeln()   
+       my_write("<a href=\"nowhere.html\" >");   // Start a dummy link. 
+       my_write(" Link"+ii);                   // text to show for the link. 
+       my_writeln(" </a> <br/>");                
+     }
+     
+     // Finished with JavaScript.  Output the debug results.
+     my_finish();
+     
+     // -->
+   </script>
+     
+</head>
+
+<body>
+
+  <h1> IT 350 - Starter page  - Read instructions below!  </h1>
+
+  <p> Instructions - Pick File->Save As.  <b>Select "Web Page, HTML only"</b>, 
+      NOT "Web Page, complete."  Then save the page somewhere appropriate on your W drive.
+  </p>
+
+
+
+
+  <!-- ***************************************************************
+       Below this point is text you should include on every IT350 page
+       *************************************************************** -->
+
+  <!-- Below is a script to output the time at which this page was last modified.
+       Later in the course we will learn how this works.  -->
+  <!-- This makes a button you can click on to validate your page - also include this on every page -->
+  <p><br/><br/> </p>
+  <hr/>
+  <p>
+   	<script type = "text/javascript">
+	 document.write('<a href="http://zee.cs.usna.edu:8888/?doc='+document.location+'">' +
+        '<img src="http://www.w3.org/html/logo/img/mark-word-icon.png"'+
+		'alt="Valid HTML 5!" height="50" width="50" />'+
+      '</a>');
+	</script>  
+    This page last modified 
+    <script type="text/javascript">
+      document.write(document.lastModified);
+    </script>
+  </p>
+
+
+</body>
+
+</html>
+  

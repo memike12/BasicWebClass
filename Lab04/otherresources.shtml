@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+  <!-- Main IT350 web page -->
+
+<html>
+
+
+<head>
+  <meta charset = "utf-8" />
+  <title>IT 350 - External Resources - Fall 2013 </title>
+  <link rel = "stylesheet" type = "text/css" href = "calstyle.css">
+</head>
+
+<body>
+<div class="container">
+	<!--#include file ="header.html" -->
+
+<div class="header">
+  <h1> IT 350 - External Resources - Fall 2013 </h1>
+</div>
+
+  <!-- Secondary and external resources for IT350 -->
+  <h3>External Resources</h3>
+
+  <ul>
+ 	  <li> <a href = "http://www.htmldog.com/reference/htmltags/">XHTML Reference</a></li>
+	  <li> <a href = "http://www.w3.org/TR/html5">W3C HTML 5 reference</a></li>
+	  <li> <a href = "http://www.w3schools.com/html/default.asp">w3schools HTML reference</a></li> 
+      <li> <a href="http://www.google.com"> Google </a> - for finding background info and images</li>
+      <li><a href="http://zee.cs.usna.edu:8888">HTML Validator (local server)</a> -- your pages must validate!
+      See also the  <a href="http://validator.w3.org"> official validator</a>, and <a href = "http://www.validome.org/"> another validator</a>, but note that the external validators will not be able to view your pages by URL. You will need to use "file upload" or "direct input". Using the local server is recommended for the pages created for this course.
+      </li>
+      <li><a href = "http://jigsaw.w3.org/css-validator/">CSS Validator</a></li>
+
+      <li><a href="http://www.cs.tut.fi/~jkorpela/forms/methods.html">GET vs POST explained</a> </li>
+      <li>How to <a href="http://www.w3.org/Style/Examples/007/center.html">center  things in CSS</a> </li>
+
+ 	  <li>Download <a
+      href="http://notepad-plus-plus.org/">Notepad++
+      Editor</a> -- improves on Notepad by adding color coding and
+      various bells and whistles.  This is in the lab and is used for IT350. </li>
+	  
+      <li>CSS Properties List from <a href = "http://www.w3schools.com/cssref/default.asp">W3Schools</a></li>
+      <li>CSS reference:  from <a
+      href="http://www.w3.org/TR/css3-roadmap/">W3C </a>(fairly
+      detailed), or a simpler <a
+      href="http://www.htmldog.com/reference/cssproperties/">guide to
+      CSS 2.1 properties</a></li>
+
+      <li><a href="http://www.visibone.com/colorlab">Web safe colors
+      </a>
+           or different <a href="http://www.lynda.com/hex.html#">web-safe color site</a></li>
+
+  <!--    <li><a href="http://www.activestate.com/Products/ActivePerl/?mp=1" >Download Perl (see notes below)</a> </li> -->
+      	<li><a href="http://www.rexswain.com/perl5.html" >Perl Ref. #1</a></li>
+      	<li><a href="http://www.faqs.org/docs/pperl/"    >Perl Ref. #2</a></li>
+      	<li><a href="http://www.faqs.org/docs/pperl/pickingUpPerl_8.html">Perl functions (subroutines)</a></li>
+  </ul>
+
+  <!--
+
+  <h3>Perl installation</h3>
+	<ol>
+	  <li>Go to Download Perl above. click "Get Active Perl", then "Free Download", then "Continue", then "AS package" under Windows.</li>
+          <li>Save the .zip file you get somewhere (e.g. c:/temp)</li>
+          <li>Open c:/temp and double-click on the zip file.  This should open WinZip or something.  Click "Extract" , then extract all the files to c:/temp/perl. </li>
+          <li>Open c:/temp/perl/ and Double-click on "install.bat".  If you are asked, click "Extract All" before proceedings. </li>
+          <li>This should open up a command prompt that runs the installation.  Just pick the default location and "y" to every question.</li> 
+	  <li> When finished, log out and log back in.  Perl should now be available on your machine.  If you have problems, open ControlPanel, go to System, select Advanced tab, and click Environment variables.  Make sure C:\perl\bin is part of your path.</li>
+	 </ol>
+
+
+	<hr/>
+	
+	<h3>Double-click deletes my Perl files!</h3>
+
+	<p>Apparently some of you have some kind of movie player called WinIEPG on your Bancroft PCs.  Your computer tries to run this when you double-click on a .pl file.  You then get a weird error and it deletes your file.</p>
+
+        <p>I recommend you do this:</p>
+           <ol>
+             <li>Make a copy of some perl file (cut and paste is easiest).  Rename it test.pl.</li>
+             <li>Right-click on test.pl.  Pick "Open With" -> "Choose Program".  </li>
+             <li>Select Crimson Editor or Notepad.  Then check "Always use the selected program to open this kind of file.  Click OK.</li>
+             <li>Log out and log back in.  Double-click on test.pl to make sure it opens Crimson Editor.  Your other files should work too now -try it with a backup .pl file.</li>
+           </ol>
+        <p>NOTE: if your PC profile ever gets wiped for some reason, Windows will forget about this and may revert to the WinIEPG of death program.  So be careful and make backups!  You might consider uninstalling WinIEPG if you don't use it.</p>
+
+-->	
+        
+  <!-- Add in footer:  contact info and validation button -->
+  <p><br/><br/> </p>
+  <hr/>
+  <p><a id="bottom">For</a> problems with this page, contact <a href="/Users/cs/adina">Adina Crainiceanu</a></p>
+
+
+  <!-- ***************************************************************
+       Below this point is text you should include on every IT350 page
+       *************************************************************** -->
+
+  <!-- Below is a script to output the time at which this page was last modified.
+       Later in the course we will learn how this works.  -->
+  <!-- This makes a button you can click on to validate your page - also include this on every page -->
+  <p>
+  	<script type = "text/javascript">
+	 document.write('<a href="http://zee.cs.usna.edu:8888/?doc='+document.location+'">' +
+        '<img src="http://www.w3.org/html/logo/img/mark-word-icon.png"'+
+		'alt="Valid HTML 5!" height="50" width="50" />'+
+      '</a>');
+	</script>  
+     This page last modified 
+    <script type="text/javascript">
+      document.write(document.lastModified);
+    </script>
+  </p>
+</div>
+</body>
+
+</html>
+  
